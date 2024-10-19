@@ -8,8 +8,6 @@ RUN npm install
 
 FROM base AS dev
 
-EXPOSE 8080
-
 CMD ["npm", "run", "dev"]
 
 FROM base AS build

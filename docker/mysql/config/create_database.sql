@@ -1,1 +1,4 @@
-CREATE DATABASE backend;
+CREATE DATABASE IF NOT EXISTS backend;
+CREATE USER IF NOT EXISTS 'backend'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'backend'@'localhost';
+FLUSH PRIVILEGES;
